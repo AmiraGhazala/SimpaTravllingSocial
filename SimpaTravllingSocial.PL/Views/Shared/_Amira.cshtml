@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SimpaTravllingSocial.PL.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+
+</head>
+<body style="background:pink">
+    @*<partial name="-/Views/Shared/-/views/shared/SharedParshal/_HeaderLayout.cshtml" />*@
+   
+    <partial name="~/Views/Shared/SharedParshal/_HeaderLayout.cshtml" />
+    <div>
+        @RenderBody()
+    </div>
+    <div style="background:skyblue;width:100% ">
+        <h1>good bye</h1>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#datatable').DataTable();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@model List<User>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Amira.cshtml";
+}
+
+<h1>AMiRA</h1>
+
+<table id="datatable" class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <th scope="col">Valid?</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <th scope="row">@user.FName</th>
+                <td>@user.LName</td>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>@user.Password</td>
+                <td>@user.IsDeleted</td>
+            </tr>
+        }
+    
+    </tbody>
+</table>
+

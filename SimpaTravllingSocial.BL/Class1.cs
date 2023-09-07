@@ -1,0 +1,11 @@
+﻿global using SimpaTravllingSocial.BL.ModelVM;
+global using SimpaTravllingSocial.DAL.Entites;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.ComponentModel.DataAnnotations;
+global using Microsoft.EntityFrameworkCore;
+global using SimpaTravllingSocial.BL.Interface.Comments;
+global using SimpaTravllingSocial.DAL.DataBase;
+global using SimpaTravllingSocial.BL.Interface.Posts;
+global using SimpaTravllingSocial.BL.Interface.Useres;
